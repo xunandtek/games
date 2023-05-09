@@ -10,12 +10,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<form action="POST">
-<input type="text" name="gameName" placeholder="Title">
-<input type="text" name="publisher" placeholder="Publisher">
-<input type="text" name="rating" placeholder="Rating">
-<input type="text" name="players" placeholder="\# of Players">
-<input type="submit" name="submit">
-</form>
+    <div class="container">
+        <form action="POST">
+            <input type="text" name="gameName" placeholder="Title" class="form-control">
+            <input type="text" name="publisher" placeholder="Publisher">
+            <input type="text" name="rating" placeholder="Rating">
+            <input type="text" name="players" placeholder="\# of Players">
+            <input type="submit" name="submit" class="btn btn-primary">
+        </form>
+    </div>
+
 </body>
 <html>
