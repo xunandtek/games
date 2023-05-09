@@ -6,7 +6,14 @@ class Database {
     private $pass;
     private $db;
 
-    function getConnection($this->host){
+    public function __construct() {
+        $this->user = "root";
+        $this->host = "localhost";
+        $this->pass = "";
+        $this->db = "gamers";
+    }
+
+    public function getConnection(){
 
     }
 }
