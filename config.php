@@ -10,7 +10,7 @@ class Database {
         $this->user = "root";
         $this->host = "localhost";
         $this->pass = "";
-        $this->db   = "gamers";
+        $this->db   = "gamer";
     }
 
     public function getConnection(){
@@ -21,6 +21,8 @@ class Database {
         }
 
         return $conn;
+
+      
     }
 }
 

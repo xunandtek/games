@@ -11,12 +11,18 @@
 </head>
 <body>
     <div class="container">
-        <form action="POST">
-            <input type="text" name="gameName" placeholder="Title" class="form-control">
-            <input type="text" name="publisher" placeholder="Publisher">
-            <input type="text" name="rating" placeholder="Rating">
-            <input type="text" name="players" placeholder="\# of Players">
-            <input type="submit" name="submit" class="btn btn-primary">
+        <h3>Add Games</h3>
+        <form method="POST" action="addGame.php" enctype="multipart/form-data">
+            
+        <input type="text" name="title" placeholder="Title" class="form-control" required>
+            <input type="text" name="publisher" placeholder="Publisher" class="form-control" required>
+            <label for="rate">Rating between 0 and 5</label>
+            <input type="range" name="rating" id="rate" placeholder="Rating" min="0" max="5" class="form-control" required>
+            <input type="text" name="players" placeholder="\# of Players" class="form-control">
+            <label class="form-label" for="img">Upload Title Image</label>
+            <input id="img" type="file" name="image" class="form-control">
+            <input type="submit" name="submit" value="addGame" class="btn btn-primary">
+
         </form>
     </div>
 
